@@ -43,14 +43,26 @@ const { title, description, image, position} = Astro.props;
         width: 80%;
     }
 
+    p
+    {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
     button
     {
         font-family: 'Outfit', sans-serif;
         width: 40%;
-        font-size: 16px;
         border-radius: 300px;
         background: #000;
-        padding: 20px 30px;
+        padding: 15px 30px;
         color: #FFF;
+        cursor: pointer;
+        transition: 0.4s ease all;
+    }
+
+    button:hover
+    {
+        transform: scale(1.1);
     }
 </style>

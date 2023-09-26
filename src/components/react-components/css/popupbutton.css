@@ -8,9 +8,15 @@
     background: #000;
     color: #FFF ;
     cursor: pointer;
+    transition: 0.3s all ease-in-out;
 }
 
-.close-button
+.popup-button:hover
+{
+    transform: scale(1.1);
+}
+
+.x-button
 {
     background: transparent;
     border: none;
@@ -24,6 +30,6 @@
     position: absolute;
     font-size: 32px;
     font-weight: 700;
-    right: 20px;
+    right: 30px;
     top: 20px;
 }

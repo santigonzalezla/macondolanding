@@ -41,7 +41,7 @@ const PopupButton = () =>
                 style={customStyles}
             >
                 <div>
-                    <button className="close-button" onClick={closeModal}>X</button>
+                    <button className="x-button" onClick={closeModal}>X</button>
                     <iframe
                         title="Calendly Popup"
                         src={calendlyURL}

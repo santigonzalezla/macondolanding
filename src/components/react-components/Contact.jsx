@@ -17,12 +17,25 @@ const Contact = () =>
         {id: "Servicios de IT", label: "Servicios de IT"},
     ];
 
+    const cleanForm = () =>
+    {
+        setName("");
+        setLastname("");
+        setEmail("");
+        setPhone("");
+        setSelectedOption([]);
+        setMessage("");
+    }
+
     const handleSubmit = (e) =>
     {
         e.preventDefault();
         emailjs
             .sendForm("service_po94d02", "template_uhfqpob", e.target, "p9sy5KN1V1jg0pnLd")
-            .then((response) => console.log(response))
+            .then((response) => {
+                console.log(response);
+                cleanForm();
+            })
             .catch((error) => console.log(error));
     }
 

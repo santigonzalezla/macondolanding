@@ -112,6 +112,8 @@ import TestimonialCard from "./TestimonialCard.astro";
         border: none;
         box-shadow: 0px 0px 10px 0px #00000033;
         position: relative;
+        cursor: pointer;
+        transition: all 0.5s ease;
     }
 
     .nav-button svg
@@ -120,11 +122,13 @@ import TestimonialCard from "./TestimonialCard.astro";
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
     }
 
     .nav-button:hover
     {
-        transform: scale(1.1);
+        transform: scale(1.2);
+        background: #45749C;
+        box-shadow: 0px 0px 10px 2px #00000033;
     }
 </style>

@@ -1,6 +1,7 @@
 ---
-import FooterForm from "./FooterForm.astro";
+import FooterForm from "./react-components/FooterForm";
 ---
+
 <footer>
     <div class="top">
         <div class="left">
@@ -27,15 +28,41 @@ import FooterForm from "./FooterForm.astro";
             <div class="column">
                 <h3>Contacto</h3>
                 <ul>
-                    <li><a href="" >+573160432994</a></li>
-                    <li><a href="" >Calle 1 Sur #8-68, Chía</a></li>
-                    <li><a href="" >info@macondosoftwares.com</a></li>
+                    <li>
+                        <a href="" >
+                            <svg width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                            </svg>
+                            +57 (316)-043-2994
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <svg width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                            </svg>
+                            Calle 1 Sur #8-68, Chía
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <svg width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                                <path d="M3 7l9 6l9 -6"></path>
+                            </svg>
+                            info@macondosoftwares.com
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="right">
             <h3>Suscríbete a nuestro Newsletter</h3>
-            <FooterForm />
+            <FooterForm client:visible />
             <div class="social">
                 <div class="app">
                     <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -60,7 +87,7 @@ import FooterForm from "./FooterForm.astro";
             </div>
         </div>
     </div>
-    <span class="disclosure"><span>2023 @ Todos los derechos reservados.</span> Macondo Magic Softwares SA.</span>
+    <span class="disclosure"><span>2023 @ Todos los derechos reservados.</span> Macondo Magic Softwares SAS.</span>
 </footer>
 
 <style>
@@ -144,6 +171,9 @@ import FooterForm from "./FooterForm.astro";
     {
         text-decoration: none;
         color: inherit;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .social
