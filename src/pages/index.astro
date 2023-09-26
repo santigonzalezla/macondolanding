@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Services from "../components/Services.astro";
+import Brands from "../components/Brands.astro";
+import About from "../components/About.astro";
+import Testimonials from "../components/Testimonials.astro";
+import Contact from "../components/react-components/Contact";
+import Footer from "../components/Footer.astro";
+import WhatsappButton from "../components/WhatsappButton.astro";
+---
+
+<Layout title="Macondo">
+	<main>
+		<Header />
+		<About />
+		<Services />
+		<Brands />
+		<Testimonials />
+		<Contact client:visible />
+		<Footer />
+		<WhatsappButton />
+	</main>
+</Layout>
+

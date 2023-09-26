@@ -1,0 +1,246 @@
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 110px;
+}
+
+.contact-top
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-top h1
+{
+    width: 40%;
+    font-size: 32px;
+    color: #141417;
+}
+
+.contact-top h3
+{
+    color: #45749C;
+    font-size: 20px;
+}
+
+.contact-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contact-left
+{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    background-color: #000;
+    color: #FFF;
+    padding: 80px 50px;
+    border-radius: 20px;
+}
+
+.contact-left-top
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-left-top h2
+{
+    color: #FFF;
+}
+
+.contact-left-top h4
+{
+    width: 90%;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.contact-left-middle
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left-middle
+{
+    font-weight: 200;
+}
+
+.contact-left-middle div
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-left-social
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.app
+{
+    padding: 15px;
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    position: relative;
+    transition: ease-in-out all 0.3s;
+    cursor: pointer;
+}
+
+.app svg
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+
+.app:hover
+{
+    transform: scale(1.2);
+    color: #FBF520;
+    border: 2px solid #FBF520;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 70px;
+    border-radius: 20px;
+}
+
+.contact-right form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input-top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.input-top div
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-top label,
+.input-option-top,
+.input-message label
+{
+    font-weight: 600;
+}
+
+.input-top input
+{
+    border: none;
+    border-bottom: 1px solid #141417;
+    padding: 10px 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.input-option
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-option div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.input-option-container label
+{
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.input-option-selection
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 300;
+}
+
+.input-message
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-message textarea
+{
+    font-family: 'Outfit', sans-serif;
+}
+
+.input-message-text
+{
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #141417;
+    padding: 10px 0;
+}
+
+.input-submit
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-right button
+{
+    font-family: 'Outfit', sans-serif;
+    color: #FFF;
+    border-radius: 300px;
+    background: #000;
+    padding: 16px 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-right button:hover
+{
+    background: #45749C;
+    color: #141417;
+}
+
+

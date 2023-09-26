@@ -1,0 +1,57 @@
+---
+import AboutCard from "./AboutCard.astro";
+---
+
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="image-container">
+            <img src="https://i.imgur.com/STa5f3k.jpg" alt="video" class="about-image"/>
+        </div>
+        <AboutCard
+            title="24 / 7 Servicio"
+            description="Servicio y soporte todos los días"
+            position="left"
+        />
+        <AboutCard
+            title="24 / 7 Servicio"
+            description="Servicio y soporte todos los días"
+            position="right"
+        />
+    </div>
+</section>
+
+<style>
+    .about
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 200px;
+    }
+
+    .about-container
+    {
+        width: 100%;
+        height: 600px;
+        border-radius: 20px;
+        border: 10px solid #FFF;
+        background: #FFF;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+        position: relative;
+    }
+
+    .image-container
+    {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .about-image
+    {
+        width: 100%;
+        height: inherit;
+        object-fit: cover; /* Hace que la imagen se ajuste y se recorte para encajar */
+    }
+</style>

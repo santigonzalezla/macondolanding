@@ -1,0 +1,39 @@
+---
+import PopupButton from "./react-components/PopupButton";
+---
+
+<div class="hero">
+    <h1>Somos el aliado perfecto para el éxito de tu empresa</h1>
+    <p>
+        Nuestra pasión por la excelencia y la innovación impulsa nuestro trabajo, brindándote soluciones que hacen
+        realidad tus ambiciones empresariales.
+    </p>
+    <PopupButton client:visible />
+</div>
+
+<style>
+    .hero
+    {
+        padding: 100px 0 140px 100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    h1
+    {
+        width: 40%;
+        font-size: 57px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
+
+    p
+    {
+        width: 40%;
+        font-size: 18px;
+        font-weight: 200;
+    }
+</style>

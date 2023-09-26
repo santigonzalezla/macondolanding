@@ -1,0 +1,84 @@
+---
+import ServiceCard from "./ServiceCard.astro";
+---
+
+<section id="service" class="service">
+    <div class="top-service">
+        <h3>Conoce los servicios que podemos ofrecerte</h3>
+        <h1>Y convierte tu visión en una realidad</h1>
+    </div>
+    <div class="bottom-service">
+        <ServiceCard
+                title="Software Development"
+                description="Desarrollo de software personalizado, creación de aplicaciones web y móviles, y servicios de integración de software adaptados a tus necesidades. Soluciones de alta calidad entregadas por un equipo de expertos."
+        >
+            <img class="left" slot="before" src="https://i.imgur.com/SQliVDb.jpg" alt="1">
+        </ServiceCard>
+        <ServiceCard
+                title="Ciberseguridad"
+                description="Servicios avanzados y personalizados de ciberseguridad para proteger tus activos digitales contra amenazas en constante evolución. Equipo de expertos protegiendo datos confidenciales y proporcionando respuesta a incidentes."
+        >
+            <img class="right" slot="after" src="https://i.imgur.com/grQikyr.jpg" alt="Web Design" />
+        </ServiceCard>
+        <ServiceCard
+                title="Servicios de TI"
+                description="Desarrollo de software personalizado, creación de aplicaciones web y móviles, y servicios de integración de software adaptados a tus necesidades. Soluciones de alta calidad entregadas por un equipo de expertos."
+        >
+            <img class="left" slot="before" src="https://i.imgur.com/kmiY8ey.jpg" alt="1">
+        </ServiceCard>
+    </div>
+</section>
+
+<style>
+    .service
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 130px;
+    }
+
+    .top-service
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-service h1
+    {
+        font-size: 32px;
+        color: #141417;
+    }
+
+    .top-service h3
+    {
+        color: #45749C;
+        font-size: 20px;
+    }
+
+    .bottom-service
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    .left
+    {
+        box-shadow: -12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    }
+
+    .right
+    {
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    }
+
+    img
+    {
+        object-fit: cover;
+        width: 50%;
+        height: 350px;
+        border-radius: 20px;
+    }
+</style>
+

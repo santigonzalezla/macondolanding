@@ -1,0 +1,56 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    image: string
+    position: string
+}
+
+const { title, description, image, position} = Astro.props;
+---
+
+<div class="service">
+    <slot name="before"/>
+    <div class="container">
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <button>Cotiza con nosotros</button>
+    </div>
+    <slot name="after"/>
+</div>
+
+
+<style>
+    .service
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+
+    .container
+    {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    h1
+    {
+        font-size: 55px;
+        width: 80%;
+    }
+
+    button
+    {
+        font-family: 'Outfit', sans-serif;
+        width: 40%;
+        font-size: 16px;
+        border-radius: 300px;
+        background: #000;
+        padding: 20px 30px;
+        color: #FFF;
+    }
+</style>

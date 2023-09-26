@@ -1,0 +1,202 @@
+---
+import FooterForm from "./FooterForm.astro";
+---
+<footer>
+    <div class="top">
+        <div class="left">
+            <img src="https://i.imgur.com/exorECd.jpg" alt="logo"/>
+        </div>
+        <div class="center">
+            <div class="column">
+                <h3>Compañia</h3>
+                <ul>
+                    <li><a href="" >Centro de proyectos</a></li>
+                    <li><a href="" >¿Por qué elegirnos?</a></li>
+                    <li><a href="" >Servicios</a></li>
+                    <li><a href="" >Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Nosotros</h3>
+                <ul>
+                    <li><a href="#about" >Acerca</a></li>
+                    <li><a href="#service" >Servicios</a></li>
+                    <li><a href="#testimonials" >Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="" >+573160432994</a></li>
+                    <li><a href="" >Calle 1 Sur #8-68, Chía</a></li>
+                    <li><a href="" >info@macondosoftwares.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Suscríbete a nuestro Newsletter</h3>
+            <FooterForm />
+            <div class="social">
+                <div class="app">
+                    <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg>
+                </div>
+                <div class="app">
+                    <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                    </svg>
+                </div>
+                <div class="app">
+                    <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="disclosure"><span>2023 @ Todos los derechos reservados.</span> Macondo Magic Softwares SA.</span>
+</footer>
+
+<style>
+    footer
+    {
+        background-color: #050505;
+        text-align: center;
+        padding: 20px 100px;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .top
+    {
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    img
+    {
+        width: 200px;
+        object-fit: fill;
+    }
+
+    .left
+    {
+        flex-basis: 20%;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    .center
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-basis: 45%;
+    }
+
+    .column
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    ul
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    li
+    {
+        font-size: 14px;
+        transition: 0.3s ease-in-out all;
+    }
+
+    li:hover
+    {
+        color: #FBF520;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .app
+    {
+        padding: 15px;
+        background: transparent;
+        border: 2px solid #FFF;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .app svg
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.6s ease;
+    }
+
+    .app:hover
+    {
+        transform: scale(1.2);
+        color: #FBF520;
+        border: 2px solid #FBF520;
+    }
+
+    .right
+    {
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .disclosure
+    {
+        align-self: flex-start;
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    .disclosure span
+    {
+        color: #FBF520;
+    }
+</style>

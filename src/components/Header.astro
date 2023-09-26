@@ -1,0 +1,31 @@
+---
+import Navbar from "./Navbar.astro";
+import Hero from "./Hero.astro";
+---
+
+<header>
+    <Navbar />
+    <Hero />
+    <img src="https://i.imgur.com/EOXQhkI.png" alt="intro"/>
+</header>
+
+<style>
+    header
+    {
+        background: #FBF52099;
+        border-radius: 20px;
+        margin: 20px;
+        position: relative;
+    }
+
+    img
+    {
+        width: 75%;
+        height: 80%;
+        border-radius: 20px;
+        position: absolute;
+        object-fit: contain;
+        bottom: 0;
+        right: -80px;
+    }
+</style>

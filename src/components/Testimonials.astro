@@ -1,0 +1,130 @@
+---
+import TestimonialCard from "./TestimonialCard.astro";
+---
+
+<section id="testimonials" class="testimonials">
+    <div class="intro">
+        <div class="top">
+            <span class="title">
+            TESTIMONIOS
+        </span>
+            <h3>Lo que nuestros clientes dicen de Macondo</h3>
+        </div>
+        <div class="navigation">
+            <button class="nav-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 6l-6 6l6 6"></path>
+                </svg>
+            </button>
+            <button class="nav-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="comments">
+        <TestimonialCard
+            name="InnovaTech"
+            description="CEO"
+            comment="Macondo Magic Software has been an invaluable partner for our company. Their expertise in web development and innovative approach have taken our digital solutions to the next level. Their team has shown extraordinary skills in transforming our ideas into high-quality end products. We highly recommend their services to any company seeking exceptional results and a personalized approach."
+            image="https://i.imgur.com/2jSfbyx.jpg"
+            position="first"
+        />
+        <TestimonialCard
+            name="Stellar Solutions"
+            description="Associated Company"
+            comment="We cannot be more satisfied with the collaboration of Macondo Magic Software. Their web development team has demonstrated exceptional expertise and a passion for excellence. They have transformed our vision into an amazing reality, exceeding our expectations every step of the way. Macondo Magic Software is a true leader in the industry and we highly recommend it to any company looking for first class web solutions."
+            image="https://i.imgur.com/2jSfbyx.jpg"
+            position="second"
+        />
+        <TestimonialCard
+            name="Factory Design Co."
+            description="CEO"
+            comment="I am immensely grateful for having engaged Macondo Softwares services in the past. Their expertise in marketing and decoration solutions for shopping malls has ben invaluable to our success. Specifically, their involvement in developing our AR Sets aplication proved to be crucial in achieving our objectives. The combination of their experience and passion resulted in a successful project that exceeded our expectations. We are truly thankful for their commitment and dedication."
+            image="https://i.imgur.com/2jSfbyx.jpg"
+            position="third"
+        />
+    </div>
+</section>
+
+<style>
+    .testimonials
+    {
+        display: flex;
+        padding: 110px;
+    }
+
+    .title
+    {
+        background: #FBF52099;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h3
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .intro
+    {
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        gap: 100px;
+    }
+
+    .top
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .comments
+    {
+        display: flex;
+        flex-basis: 100%;
+        gap: 30px;
+    }
+
+    .navigation
+    {
+        display: flex;
+        gap: 20px;
+        width: 50%;
+    }
+
+    .nav-button
+    {
+        border-radius: 50%;
+        padding: 25px;
+        border: none;
+        box-shadow: 0px 0px 10px 0px #00000033;
+        position: relative;
+    }
+
+    .nav-button svg
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+    }
+
+    .nav-button:hover
+    {
+        transform: scale(1.1);
+    }
+</style>
