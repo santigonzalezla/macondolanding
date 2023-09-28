@@ -8,15 +8,6 @@ import node from "@astrojs/node";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()]
-  //output: "server",
-  //adapter: vercel()
-  ,
-
-  output: 'static',
-  site: 'https://macondosoftwares.net'
-
-  //output: "server",
-  //adapter: cloudflare()
   ,
   adapter: node({
     mode: "standalone"
