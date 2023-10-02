@@ -20,11 +20,27 @@ import Hero from "./Hero.astro";
 
     img
     {
-        height: 80%;
+        max-height: calc(100% - 250px);
         border-radius: 20px;
         position: absolute;
         object-fit: contain;
         bottom: 0;
         right: 0;
+    }
+
+    @media (max-width: 768px)
+    {
+        img
+        {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        img
+        {
+            max-height: calc(100% - 150px);
+        }
     }
 </style>

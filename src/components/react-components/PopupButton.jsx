@@ -32,7 +32,7 @@ const PopupButton = () =>
 
     return (
         <div>
-            <button className="popup-button" onClick={openModal}>Reserva tu Cita!</button>
+            <button className="popup-button titilante" onClick={openModal}>Reserva tu Cita!</button>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}

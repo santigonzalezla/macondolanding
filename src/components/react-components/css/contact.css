@@ -243,4 +243,44 @@
     color: #141417;
 }
 
+@media screen and (max-width: 1030px)
+{
+    .contact
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
 
+    .contact-bottom
+    {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-left
+    {
+        width: 100%;
+    }
+
+    .contact-right
+    {
+        width: 100%;
+    }
+
+    .input-top
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-option-container
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

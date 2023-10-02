@@ -36,4 +36,46 @@ import PopupButton from "./react-components/PopupButton";
         font-size: 18px;
         font-weight: 200;
     }
+
+    @media screen and (max-width: 767px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px;
+        }
+
+        h1
+        {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+    {
+        .hero
+        {
+            width: 100%;
+            padding: 30px 65px;
+        }
+
+        h1
+        {
+            width: 50%;
+            font-size: 40px;
+        }
+
+        p
+        {
+            width: 50%;
+            font-size: 16px;
+        }
+    }
 </style>

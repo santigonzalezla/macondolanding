@@ -46,4 +46,11 @@ const { title, description, position} = Astro.props;
         bottom: 20%;
         right: -10%;
     }
+
+    @media (max-width: 768px)
+    {
+        .card {
+            display: none;
+        }
+    }
 </style>

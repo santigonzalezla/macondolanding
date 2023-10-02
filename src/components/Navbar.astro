@@ -1,9 +1,19 @@
----
-
----
-
 <nav>
     <h1>Macondo</h1>
+    <input type="checkbox" id="check"/>
+    <label for="check" class="icons">
+        <svg class="menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 6l16 0"></path>
+            <path d="M4 12l16 0"></path>
+            <path d="M4 18l16 0"></path>
+        </svg>
+        <svg class="close" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+        </svg>
+    </label>
     <ul>
         <li><a href="#about">Acerca</a></li>
         <li><a href="#service">Servicios</a></li>
@@ -13,7 +23,8 @@
 </nav>
 
 <style>
-    @font-face {
+    @font-face
+    {
         font-family: "Fun City Level 3 Basic";
         src: url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.eot");
         src: url("https://db.onlinewebfonts.com/t/506ff1864a3cdecf43c4b1bc8c246b9c.eot?#iefix")format("embedded-opentype"),
@@ -25,6 +36,7 @@
 
     nav
     {
+        max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -37,6 +49,7 @@
         align-items: center;
         gap: 100px;
         list-style: none;
+        transition: 0.3s all ease-in-out;
     }
 
     a
@@ -59,11 +72,90 @@
         padding: 15px 50px;
         border: none;
         cursor: pointer;
-        transition: 0.3s all ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
     button:hover
     {
         transform: scale(1.1);
+    }
+
+    .icons
+    {
+        cursor: pointer;
+        display: none;
+    }
+
+    #check
+    {
+        display: none;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        nav
+        {
+            padding: 30px 30px;
+        }
+
+        ul
+        {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 5%;
+            gap: 10px;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 20%;
+            margin-top: 80px;
+            z-index: 3;
+            transition: 1s all ease-in-out;
+        }
+
+        .icons
+        {
+            display: block;
+            right: 0;
+        }
+
+        #check:checked~.icons .menu
+        {
+            display: none;
+        }
+
+        #check:checked~.icons .close
+        {
+            display: block;
+        }
+
+        #check:checked~ul
+        {
+            display: flex;
+        }
+
+        .close
+        {
+            display: none;
+        }
+
+        button
+        {
+            display: none;
+        }
+    }
+
+    /* Estilos para pantallas grandes (más de 992px de ancho) */
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        nav
+        {
+            padding: 30px 30px;
+        }
+
+        ul
+        {
+            gap: 25px;
+        }
     }
 </style>

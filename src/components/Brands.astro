@@ -27,8 +27,9 @@
     .carousel
     {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
     }
 
 
@@ -36,5 +37,27 @@
     {
         height: 150px;
         object-fit: contain;
+    }
+
+    @media screen and (max-width: 767px)
+    {
+        .carousel
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 1024px)
+    {
+        .carousel
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 </style>

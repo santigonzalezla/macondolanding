@@ -54,4 +54,20 @@ import AboutCard from "./AboutCard.astro";
         height: inherit;
         object-fit: cover; /* Hace que la imagen se ajuste y se recorte para encajar */
     }
+
+    @media (max-width: 768px)
+    {
+        .about
+        {
+            padding: 50px 20px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px)
+    {
+        .about
+        {
+            padding: 50px 90px;
+        }
+    }
 </style>
