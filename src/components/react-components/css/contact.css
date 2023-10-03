@@ -243,7 +243,7 @@
     color: #141417;
 }
 
-@media screen and (max-width: 1030px)
+@media screen and (max-width: 1024px)
 {
     .contact
     {
@@ -261,16 +261,12 @@
         padding: 0;
     }
 
-    .contact-left
-    {
-        width: 100%;
-    }
-
+    .contact-left,
     .contact-right
     {
+        flex-basis: 80%;
         width: 100%;
     }
-
     .input-top
     {
         flex-direction: column;

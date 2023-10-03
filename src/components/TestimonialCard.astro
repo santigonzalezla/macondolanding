@@ -86,4 +86,14 @@ const { ratings, comment, image, name, description, position } = Astro.props;
         border-radius: 50%;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 768px) and (max-width: 1024px)
+    {
+        .first,
+        .second,
+        .third
+        {
+            margin-top: 30px;
+        }
+    }
 </style>
