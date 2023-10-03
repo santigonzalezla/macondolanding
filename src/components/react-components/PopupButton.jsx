@@ -2,18 +2,7 @@ import './css/popupbutton.css';
 import { useState } from 'react';
 import Modal from 'react-modal';
 
-const customStyles = {
-    content: {
-        width: '80%',
-        height: '700px',
-        margin: 'auto',
-        borderRadius: '10px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.25)',
-        overflow: 'hidden',
-        position: 'relative',
-        zIndex: '999'
-    },
-};
+
 
 const PopupButton = () =>
 {
@@ -38,7 +27,7 @@ const PopupButton = () =>
                 onRequestClose={closeModal}
                 contentLabel="Calendly Popup"
                 ariaHideApp={false}
-                style={customStyles}
+                className="popup-modal"
             >
                 <div>
                     <button className="x-button" onClick={closeModal}>X</button>
@@ -46,7 +35,7 @@ const PopupButton = () =>
                         title="Calendly Popup"
                         src={calendlyURL}
                         width="100%"
-                        height="660"
+                        height="700"
                         frameBorder="0"
                     ></iframe>
                 </div>
