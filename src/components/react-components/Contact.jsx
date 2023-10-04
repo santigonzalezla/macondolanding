@@ -112,10 +112,13 @@ const Contact = () =>
                             </svg>
                         </div>
                         <div className="app" onClick={() => window.open("https://www.linkedin.com/company/macondo-magic-softwares/", "_blank")}>
-                            <svg width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
+                                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M8 11l0 5"></path>
+                                <path d="M8 8l0 .01"></path>
+                                <path d="M12 16l0 -5"></path>
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
                             </svg>
                         </div>
                     </div>

@@ -1,5 +1,7 @@
 <nav>
-    <h1>Macondo</h1>
+    <h1 onclick="window.open('https://www.macondosoftwares.com')">
+        Macondo
+    </h1>
     <input type="checkbox" id="check"/>
     <label for="check" class="icons">
         <svg class="menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -50,6 +52,7 @@
         gap: 100px;
         list-style: none;
         transition: 0.3s all ease-in-out;
+        color: #FFF;
     }
 
     a
@@ -61,6 +64,8 @@
     h1
     {
         font-family: "Fun City Level 3 Basic", sans-serif;
+        color: #FFF;
+        cursor: pointer;
     }
 
     button
@@ -107,8 +112,8 @@
             gap: 10px;
             flex-direction: column;
             align-items: flex-end;
-            width: 20%;
-            margin-top: 80px;
+            width: 30%;
+            margin-top: 60px;
             z-index: 3;
             transition: 1s all ease-in-out;
         }
@@ -132,6 +137,9 @@
         #check:checked~ul
         {
             display: flex;
+            background: #45749C;
+            border-radius: 20px;
+            padding: 20px;
         }
 
         .close
