@@ -4,9 +4,10 @@ interface Props {
     description: string;
     image: string
     position: string
+    button: string
 }
 
-const { title, description, image, position} = Astro.props;
+const { title, description, image, position, button} = Astro.props;
 ---
 
 <div class="service">
@@ -14,7 +15,7 @@ const { title, description, image, position} = Astro.props;
     <div class="container">
         <h1>{title}</h1>
         <p>{description}</p>
-        <button onclick="window.location.href = 'https://calendly.com/d/4bv-22g-bsf/cuentanos-tu-proyecto?month=2023-09'">Cotiza con nosotros</button>
+        <button onclick="window.location.href = 'https://calendly.com/d/4bv-22g-bsf/cuentanos-tu-proyecto?month=2023-09'">{button}</button>
     </div>
     <slot name="after"/>
 </div>
